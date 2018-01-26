@@ -31,8 +31,8 @@ int isKaprekar(int n) {
   }
   
   int i;
-  long square = n * (long) n;
-  int numDigits = log10(n) + 1;
+  long square = (long) n *  n;// move long to front.
+  int numDigits = (int) log10(square) + 1;
   long modulus = 1;
   long first, second;
 
